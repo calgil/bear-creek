@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bear Creek MFG</title>
+
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+</head>
+<body>
+    
+  <main>
+    <nav id="topNav" class="navbar nav">
+        <div class="container">
+            <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
+                <span>&#9776;</span>
+            </button>
+            <div class="logo">
+                <div class="logo-img">
+                    <img src="./assets/logo.jpeg" alt="bear-outline">
+                    <a class="logo-letters" href="./index.html"><p>BCMFG</p></a>
+                </div>
+            </div>
+            <a class="navbar-brand company-name" href="./index.html">Bear Creek MFG</a>
+            <ul class="navbar-list nav">
+                <li class="nav-link"><a href="#about-us">About Us</a></li>
+                <li class="nav-link"><a href="#gallery">Gallery</a></li>
+                <li class="nav-link"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="about-us" class="container about-us">
+        <h1>Bear Creek Manufacturing</h1>
+        <h2 class="section-head">About Us</h2>
+        <div class="text">
+            <p>
+                Bear Creek Manufacturing is a small family owned and operated machine and manufacturing company.
+                We specialize in custom orders and repairs. 
+            </p>
+        </div>
+        <div class="img-container">
+            <img class="about-img" src="./assets/metal.jpeg" alt="saw/sparks">
+        </div>
+    </section>
+    <section id="gallery" class="container">
+        <h2 class="section-head">Gallery</h2>
+        <div class="gallery">
+            <div class="img-container gallery-img-container">
+                <img class="gallery-photo gallery-1" src="./assets/gallery-1.jpeg" alt="saw in metal">
+            </div>
+            <div class="img-container gallery-img-container">
+                <img class="gallery-photo" src="./assets/gallery-2.jpeg" alt="building skeleton">
+            </div>
+            <div class="img-container gallery-img-container">
+                <img class="gallery-photo" src="./assets/gallery-3.jpeg" alt="welding">
+            </div>
+        </div>
+    </section>
+    <footer class="contact">
+        <h2 id="contact" class="section-head">Contact</h2>
+        <div class="text">
+            <p>If you would like to work with us just reach out by email and we'll help you out</p>
+            <p>email@gmail.com</p>
+        </div>
+    </footer>
+  </main>
+
+    <script>
+            const navButton = document.querySelector('button[aria-expanded]');
+
+            function toggleNav({ target }) {
+                const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+                navButton.setAttribute('aria-expanded', !expanded);
+            }
+
+            navButton.addEventListener('click', toggleNav);
+    </script>
+
+
+</body>
+</html>
+
+
+
+

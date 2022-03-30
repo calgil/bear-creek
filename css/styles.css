@@ -1,0 +1,133 @@
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 1rem 0;
+    z-index: 500;
+    transition: ease-in-out 0.3s;
+    background-color: rgb(5, 6, 7);
+}
+
+
+.navbar.sticky {
+    background-color: rgb(5, 6, 7);
+    box-shadow: 0px 0px 20px rgba(48, 63, 100, 0.2);
+}
+
+.navbar.sticky .navbar-toggler span,
+.navbar.sticky .navbar-brand {
+    color: rgb(235, 234, 240);
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: ease-in-out 0.3s;
+    color: rgb(235, 234, 240);
+}
+
+.navbar-toggler span {
+    font-size: 40px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.logo {
+    width: 120px;
+}
+
+.logo-img {
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.logo-img img { border-radius: 5px; }
+
+.logo-letters {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+
+.navbar-brand {
+    margin-right: auto;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 100%;
+    transition: ease-in-out 0.3s;
+    padding-left: 1rem;
+    color: rgb(235, 234, 240);
+    margin-left: 1rem;
+    display: none;
+}
+
+
+.nav-link a {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-right: 20px;
+    line-height: 20px;
+    padding: 0 1rem;
+    transition: ease-in-out 0.3s;
+    color: rgb(235, 234, 240);
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-list a:hover, .navbar-toggler:hover {
+    color: rgb(88, 149, 202);
+}
+
+section, footer { 
+    margin-top: 4rem;
+    text-align: center;
+ }
+
+h1 { 
+    margin-top: 12rem;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+
+.about-us {
+    margin-top: 7rem;
+}
+
+.text p {
+    max-width: 400ch;
+    margin: auto;
+}
+
+.img-container{ 
+    max-width: 250px; 
+    margin: 2rem auto;
+}
+
+.img-container img { 
+    border-radius: 10px;
+}
+
+footer { padding-bottom: 2rem; }
+
+
