@@ -13,11 +13,13 @@
     position: absolute;
     right: 0;
     top: 50px;
-    background: linear-gradient(to right, transparent, rgba(5, 6, 7, 0.9) 50%, rgba(5, 6, 7, 1));
+    display: flex;
+    justify-content: space-around;
+    background: rgb(5, 6, 7);
     width: 100%;
     text-align: right;
     box-shadow: 0px 0px 20px rgba(52, 49, 75, 0.1);
-    margin-top: 40px;
+    margin-top: 60px;
     padding-bottom: 20px;
 }
 

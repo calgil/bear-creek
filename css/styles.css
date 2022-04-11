@@ -1,7 +1,6 @@
 .navbar .container {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .navbar {
@@ -47,6 +46,7 @@
 
 .logo {
     width: 120px;
+    margin: auto;
 }
 
 .logo-img {
