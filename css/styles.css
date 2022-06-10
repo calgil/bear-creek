@@ -117,6 +117,8 @@
     color: var(--color-text);
 }
 
+.hero-bg { background-image: url('../assets/bg-image.jpg'); }
+
 .hero-content { 
     margin-top: 5rem;
  }
