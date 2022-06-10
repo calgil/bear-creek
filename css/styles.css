@@ -117,10 +117,11 @@
     color: var(--color-text);
 }
 
-.hero-bg { background-image: url('../assets/bg-image.jpg'); }
 
 .hero-content { 
-    margin-top: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 0.5rem;
+    background-image: url('../assets/bg-image.jpg');
  }
 
  .hero-content .sub-header { padding-bottom: 1.5rem; }
