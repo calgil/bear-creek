@@ -64,6 +64,15 @@ toggleTheme.addEventListener('click', function() {
     }
 });
 
+const collapseTheme = () => {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        const tab = toggleTheme.parentElement.parentElement;
+        tab.classList.remove(open);
+    }
+}
+
+window.onscroll = () => collapseTheme();
+
 for (const elm of switcher){
     elm.addEventListener('click', function() {
         const toggle = this.dataset.toggle;
