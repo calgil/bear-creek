@@ -95,6 +95,11 @@
     right: 0;
     z-index: 10;
     background-color: #fff;
+    color: var(--navbar-text-color);
+}
+
+.navbar div a {
+    color: var(--navbar-text-color);
 }
 
 .logo-bg {
@@ -106,7 +111,6 @@
 
 .navbar-nav {
     margin-left: auto;
-    color: var(--color-text);
 }
 
 .main-menu {
@@ -118,11 +122,6 @@
 .main-menu li:hover {
     cursor: pointer;
 }
-
-.nav-link {
-    color: var(--color-text);
-}
-
 
 .hero-content { 
     padding-top: 5rem;
